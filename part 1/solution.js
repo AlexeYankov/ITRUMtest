@@ -24,3 +24,5 @@ var addTwoNumbers = function (l1, l2) {
     }
     return c.toString().split("").reverse();
 };
+
+addTwoNumbers([2,4,3], [5,6,4])
