@@ -6,6 +6,7 @@ const files = [
     "./common/deleteTask.js",
     "./common/restoreTask.js",
     "./common/basket.js",
+    "./common/handleEnter.js",
 ];
 
 function importFiles(files) {

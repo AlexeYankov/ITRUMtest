@@ -17,7 +17,7 @@
     </div>
   </div>
 
-   <input id='input' type="text" placeholder="название задачи">
+   <input id='input' type="text" placeholder="название задачи" onkeypress="handle(event)">
    <button onclick="addTask()">создать</button>
    <button class="deleteButtonHidden" id="delete" onclick="deleteTask()" style="background-color: tomato;">удалить</button>
    <div id="inputWarning" class="deletedTasksListHidden">
@@ -31,7 +31,6 @@
       </span>
       </div>
       <div id="deletedTasksList" class="basketStyle" >
-
       </div>
     </div>
   </body>
