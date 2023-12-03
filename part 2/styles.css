@@ -16,10 +16,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    text-align: left;
-    width: 230px;
-    /* border: 1px solid red; */
-    padding: 5px 10px;
+    width: 100%;
+    max-width: 600px;
+    height: 40px;
+    border-bottom: 1px solid gray;
+}
+
+.task span {
+    padding-left: 20px;
+    font-size: 20px;
+}
+.task input {
+    margin-left: 20px;
+    padding-left: 5px;
+    font-size: 16px;
 }
 .deletedTasks {
     display: flex;
@@ -31,14 +41,8 @@
     padding: 5px 10px;
 }
 .checked {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: left;
-    width: 230px;
-    /* border: 1px solid red; */
-    padding: 5px 10px;
     text-decoration: line-through;
+    color: gray;
 }
 
 .deletedTasksList {
@@ -52,4 +56,171 @@
 }
 .deleteButtonHidden {
     opacity: 0;
+}
+
+.headContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.headWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    font-size: 24px;
+    max-width: 600px;
+    background-color: rgb(255, 216, 173);
+    padding-left: 20px;
+}
+.headWrapper button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    border: none;
+    background: none;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+    max-width: 600px;
+    background-color: rgb(238, 130, 8);
+    border-radius: 8px 8px 0px 0px;
+}
+
+/* .headContainer input {
+    border: none;
+    box-sizing: border-box;
+    outline: 0;
+    padding: .75rem;
+    position: relative;
+    width: 100%;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+} */
+
+.appWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.inputDate {
+    cursor: pointer;
+    border: 1px solid red;
+    position: relative;
+    left: -180px;
+    width: 230px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mainInputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
+    margin-top: 100px;
+    width: 100%;
+    max-width: 600px;
+    height: 90px;
+    border-top: 1px solid gray;
+    padding-bottom: 10px;
+    /* bottom: 100px; */
+}
+
+.mainInputContainer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    border: none;
+    background: none;
+    font-size: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.mainInputContainer span {
+    padding-left: 10px;
+    /* margin-top: 15px; */
+}
+
+.inputContainerWrapper {
+    position: relative;
+}
+
+.inputForTasks {
+    display: flex;
+    margin-top: 20px;
+    width: 340px;
+    height: 32px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.appContainerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 8px;
+    width: 600px;
+}
+
+.bottomWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.trash {
+    cursor: pointer;
+    padding: 0px 20px;
+}
+
+.trash:hover {
+   content: url("./asserts/trash-can-solidRed.svg");
+}
+
+.labelForCheckbox {
+   cursor: pointer;
+   min-width: 40px;
+}
+
+.checkbox {
+    position: absolute;
+    width: 0px;
+    height: 0px;
 }

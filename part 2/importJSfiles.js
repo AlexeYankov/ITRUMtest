@@ -1,12 +1,14 @@
 const files = [
     "./jsApp.js",
     "./common/addElement.js",
+    "./common/editElement.js",
     "./common/completeTask.js",
     "./common/selectAllTasks.js",
     "./common/deleteTask.js",
-    "./common/restoreTask.js",
-    "./common/basket.js",
     "./common/handleEnter.js",
+    "./common/getToLocalStorage.js",
+    "./common/setCurrentDate.js",
+    "./common/clearTasks.js",
 ];
 
 function importFiles(files) {
